@@ -100,20 +100,28 @@ V Pythonu rozlišujeme a používáme dva typy čísel - celá čísla (2, -5, 9
 Protože při programování dost často narazíme na matematiku (ale není třeba se toho bát!), např. když budeme potřebovat spočítat, o kolik políček se nám mají hýbat postavy ve hře, nebo jaké má hráč skóre. Určitě tedy budeme potřebovat základní matematické operace, jako je sčítání, odečítání, násobení a dělení. Pro obtížnější výpočty (např. výpočet odmocnin) je pro python vytvořené speciální sada funkci math, o které si budeme povídat později.
 
 Základní operace se píší, tak jak jste zvyklí:
+
 sčítání: +
 `>>> 5 + 5`
+
 odčítání: -
 `>>> 1 - 7`
+
 násobení: *
 `>>> 3 * 8`
+
 dělení: /
 `>>> 30/7`
 
+
 Další operace jsou:
+
 mocnění: **
 `>>> 5**2`
+
 celočíselné dělení: //
 `>>> 30//7`
+
 zbytek po dělení: %
 `>>> 30%7`
 
@@ -122,13 +130,34 @@ Zjednodušeně řečeno - řetězce používáme, když chceme naopak v programu
 `>>> "Code rebels"`
 
 ### Operace s řetězci
-I pro řetězce máme v pythonu některé operace. Můžeme řetězce skládat dohromady, pomocí operátoru +. Také můžeme zjištovat, jaké písmeno je první nebo poslední (což se nám může třeba hodit při ověřování hesel), avšak to se naučíme později v kurzu.
+I pro řetězce máme v pythonu některé operace. Můžeme řetězce skládat dohromady, pomocí operátoru +. Řetězce můžeme také násobit, čímž způsobíme, že se jeden řetězec bude několikrát opakovat za sebou. Také můžeme zjištovat, jaké písmeno je první nebo poslední (což se nám může třeba hodit při ověřování hesel), avšak to se naučíme později v kurzu.
 
->>> 'Code' + ' ' + 'Rebels'
+`>>> 'Code' + ' ' + 'Rebels'`
 
 ### Číslo vs. řetězec
-Také číslo můžeme chtít někdy použít jako řetězec, v případě, že se třeba bude jednat o šifru a nechceme, aby nám s číslem někdo manipuloval. V tom případě dáme do závorek i číslo "789567". Můžete si vyzkoušet, že poté 
-skládání řetězců
 
-### Příklady
-Vyzkoušejte si, jaký je rozdíl mezi dělením a celočíselným dělením. Jaký je mezi tím rozdíl?
+Také číslo můžeme chtít někdy použít jako řetězec, v případě, že se třeba bude jednat o šifru a nechceme, aby nám s číslem někdo manipuloval. V tom případě dáme do závorek i číslo "789567". Můžete si vyzkoušet, že poté 
+skládání řetězců.
+
+### Příkaz print()
+
+V dnešní lekci budeme používat pro výpis programu příkaz print(). Do kulatých závorek vždy vložíme, co chceme vytisknout. 
+
+### Příklady
+
+Vyzkoušejte si, jaký je rozdíl mezi dělením a celočíselným dělením.
+
+Vypočítejte, kolik mi zbyde bonbónů, pokud jich mám 87 a spravedlivě je rozdělím mezi svých 9 kamarádů.
+
+Vyzkoušejte si příkaz "87998" - 8. Jaký bude výsledek?
+
+Vypište slovo "la" 180x za sebou.
+
+Vypište slovo "la" 180x za sebou včetně mezer.
+
+
+
+
+
+
+
