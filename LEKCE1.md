@@ -94,11 +94,41 @@ Máš-li otevřenou příkazovou řádku, po instalaci Pythonu ji zavři a otev�
 
 ## Čísla a řetězce 
 
-Čísla:
-celá čísla, desetinná čísla
-základní matematické operace
-Řetězce:
-rozdíl číslo vs. řetězec
+### Čísla
+V Pythonu rozlišujeme a používáme dva typy čísel - celá čísla (2, -5, 9, 0,...) a čísla desetinná (0.59, 1.2, atd.). Pozor! U desetinných čísel se místo desetinné čárky píše tečka.
+### Základní matematické operace
+Protože při programování dost často narazíme na matematiku (ale není třeba se toho bát!), např. když budeme potřebovat spočítat, o kolik políček se nám mají hýbat postavy ve hře, nebo jaké má hráč skóre. Určitě tedy budeme potřebovat základní matematické operace, jako je sčítání, odečítání, násobení a dělení. Pro obtížnější výpočty (např. výpočet odmocnin) je pro python vytvořené speciální sada funkci math, o které si budeme povídat později.
+
+Základní operace se píší, tak jak jste zvyklí:
+sčítání: +
+`>>> 5 + 5`
+odčítání: -
+`>>> 1 - 7`
+násobení: *
+`>>> 3 * 8`
+dělení: /
+`>>> 30/7`
+
+Další operace jsou:
+mocnění: **
+`>>> 5**2`
+celočíselné dělení: //
+`>>> 30//7`
+zbytek po dělení: %
+`>>> 30%7`
+
+### Řetězce
+Zjednodušeně řečeno - řetězce používáme, když chceme naopak v programu používat něco s písmeny. Např. pokud si chceme uložit přezdívku hráčů nebo vypsat Game over. V pythonz poznáme řetězce podle toho, že jsou ohraničené úvozovkami. Nezáleží na tom, jestli používáte jednoduché nebo dvojité, každý programátor má radši jiné. 
+`>>> "Code rebels"`
+
+### Operace s řetězci
+I pro řetězce máme v pythonu některé operace. Můžeme řetězce skládat dohromady, pomocí operátoru +. Také můžeme zjištovat, jaké písmeno je první nebo poslední (což se nám může třeba hodit při ověřování hesel), avšak to se naučíme později v kurzu.
+
+>>> 'Code' + ' ' + 'Rebels'
+
+### Číslo vs. řetězec
+Také číslo můžeme chtít někdy použít jako řetězec, v případě, že se třeba bude jednat o šifru a nechceme, aby nám s číslem někdo manipuloval. V tom případě dáme do závorek i číslo "789567". Můžete si vyzkoušet, že poté 
 skládání řetězců
 
-Příklady:
+### Příklady
+Vyzkoušejte si, jaký je rozdíl mezi dělením a celočíselným dělením. Jaký je mezi tím rozdíl?
