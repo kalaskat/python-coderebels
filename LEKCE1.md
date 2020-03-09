@@ -48,8 +48,51 @@ cd ..
 ```
 Teď můžeš smazat vytvořený adresář naucse-python. K tomu použij příkaz rm nebo rmdir (z remove – odstraň, resp. remove directory – odstraň adresář).
 
-Instalace Visual Studio Code - tutoriál s printscreeny
-Čísla a řetězce (vytisknout základní přehled)
+## Pozor!
+Příkazová řádka nepoužívá odpadkový koš! Všechno se nadobro smaže. Takže si dobře překontroluj, že mažeš správný adresář.
+
+Na Windows je potřeba zadat přepínač, který říká, že má smazat adresář a veškerý jeho obsah. Tentokrát je to /S (lomítko, S). Příkaz rmdir se automaticky ujistí, jestli to co mažeš opravdu chceš smazat.
+
+```
+> rmdir /S naucse-python 
+
+```
+
+## Shrnutí
+Tady je tabulka základních příkazů, se kterými si zatím vystačíme:
+
+| Příkaz       | Popis           | Příklad  |
+| ------------- |:-------------:| -----:|
+| cd      | změna adresáře | cd test |
+| cd      | výpis aktuálního adresáře      |   cd |
+| dir | výpis adresáře      |    dir |
+| copy | zkopírování souboru     |    copy puvodni.txt kopie.txt |
+| move | přesun/přejmenování souboru      |    move puvodni.txt novy.txt |
+| mkdir | vytvoření adresáře     |    mkdir test |
+| del | smazání souboru      |    rm ahoj.txt |
+| exit | ukončení      |    exit |
+
+Příkazů existuje samozřejmě daleko víc. Dokonce každý program, který máš na počítači nainstalovaný, jde spustit z příkazové řádky – a to většinou jen zadáním jeho jména. Zkus, jestli na tvém počítači bude fungovat `firefox`, `notepad`, `safari` nebo `gedit`.
+
+Při učení Pythonu použiješ programy/příkazy jako `python`, které zanedlouho nainstalujeme.
+
+## Instalace Visual Studio Code 
+Na stránce https://code.visualstudio.com/download si stáhneme instalační soubor a nainstalujeme si Visual Studio Code. Jedná se o program, ve kterém budem psát kód pro programy a následně jej budeme spouštět.
+
+## Instalace Pythonu
+Běž na stahovací stránku Pythonu (https://www.python.org/downloads/) a stáhni si instalátor nejnovější stabilní verze Pythonu. Ověř si že je to verze 3.6.0 nebo novější – verze 3.6.0 má jistá vylepšení, která budeme v tomto kurzu používat.
+
+Kde zjistíš, zda máš 32bitové nebo 64bitové Windows? Otevři nabídku Start, vyhledat „Systém“ a otevřít Systémové informace. Pokud máš novější počítač, téměř jistě budeš mít Windows 64bitové.
+
+![instalace](https://naucse.python.cz/course/pyladies/beginners/install/static/windows_add_python_to_path.png)
+
+Stažený instalátor spusť. Na začátku instalace zaškrtni Install launcher for all users a také Add Python to PATH. 
+
+Pak zmáčkni Install now a dále se drž instrukcí.
+
+Máš-li otevřenou příkazovou řádku, po instalaci Pythonu ji zavři a otevři novou. Instalace mění systémové nastavení, které se musí načíst znovu.
+
+## Čísla a řetězce 
 
 Čísla:
 celá čísla, desetinná čísla
