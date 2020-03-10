@@ -1,2 +1,15 @@
+### LEKCE 3 - FUNKCE
+
 Opakování (20 min)
-Funkce (60 min) - vytváření vlastních, ukázka předem připravených funkcí a knihoven, dokumentace
+
+## Co je to funkce?
+
+(Nejprve se pobavit o tom, kdo zná funkce z matematiky?)
+
+## Moduly
+
+## Známé funkce a moduly
+
+## Dokumentace 
+
+## Psaní vlastních funkcí
