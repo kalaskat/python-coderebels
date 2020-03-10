@@ -113,4 +113,8 @@ Vytvořte program, který načte telefonní číslo a rozhodne, zda se opravdu j
 
 Vytvořte funkci, která vypíše hlavní menu hry. Bude tedy vypisovat možnosti, jaké hráč může zvolit (např. "Nová hra", "Načíst hru", "Nejlepší skóre", atp.)
 
-Vytvořte funkci, která má jako vstupní parametr řetězec heslo.
+Vytvořte funkci, která má jako vstupní parametr řetězec heslo. Pokud je heslo delší než 8 znaků a skládá se NEJEN z písmen, funkce vrátí hodnotu 1, pokud ne, vrátí hodnotu 0. V programu funkci zavolejte a vypište, zda je heslo validní (1) nebo ne (0).
+
+Vytvořte funkci, která aktualizuje skóre hráče, tedy přičte k němu nějakou hodnotu (třeba 1). V programu pak funkci pro aktualizování použijte. Pozor na to, že hodnotu musíte v proměnné znovu uložit, jinak se neaktualizuje!
+
+Vytvořte funkci, která vezme 2 parametry (a, b) a vypočítá jejich součet, rozdíl a součin.
