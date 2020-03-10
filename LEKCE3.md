@@ -34,7 +34,22 @@ Stejně dobře samozřejmě můžete využít google, pokud si nemůžete vzpome
 
 ## Psaní vlastních funkcí
 
+Dobrý programátor se neobejde bez psaní vlastních funkcí. Nyní si ukážeme jak na to. V zásadě jsou naše hlavní ingredience pro funkce 3: název funkce, její vstupní parametr(y) a její výstupní parametr(y).
 
+### Struktura funkce
+
+``` python
+def <název funkce> (<vstupní parametry>):
+  <co má funkce dělat>
+  return <co má funkce vrátit jako výsledek>
+```
+  
+! Pozor na odsazení !
+
+1) Funkce bez vstupního parametru a bez výstupu
+Nejjednodušší funkci je funkce, která nemá žádné vstupní ani výstupní parametry. Pokud tuto funkci voláme, vystačí nám prázdné závorky. Protože nám fuknce nedává nic zpátky, nemůžeme její výsledek nikam uložit. Takové fuknce se obvykle využívají pro vypsaní nějakého textu. 
+2) Se vstupním parametrem a bez výstupu (výpis proměnné)
+3) Se vstupním parametrem a s výstupem (zjisti věk, pokud víš rok narození)
 
 ## Úkoly
 
