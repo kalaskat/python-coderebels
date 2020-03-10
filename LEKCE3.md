@@ -1,4 +1,4 @@
-### LEKCE 3 - FUNKCE
+# LEKCE 3 - FUNKCE
 
 Opakování (20 min)
 
