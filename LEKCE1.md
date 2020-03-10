@@ -145,15 +145,20 @@ V dnešní lekci budeme používat pro výpis programu příkaz print(). Do kula
 
 ### Příklady
 
-Vyzkoušejte si, jaký je rozdíl mezi dělením a celočíselným dělením.
+Vyzkoušejte si, jaký je rozdíl mezi dělením (/) a celočíselným dělením (//).
 
 Vypočítejte, kolik mi zbyde bonbónů, pokud jich mám 87 a spravedlivě je rozdělím mezi svých 9 kamarádů.
+
+Vypočítejte, kolik je na parkovišti aut, pokud je zde 20 řad po 10 místech.
 
 Vyzkoušejte si příkaz "87998" - 8. Jaký bude výsledek?
 
 Vypište slovo "la" 180x za sebou.
 
 Vypište slovo "la" 180x za sebou včetně mezer.
+
+Vytvořte řetězec který vypadá takto: '111111000000', ale místo šesti jedniček a šesti nul obsahuje 256 jedniček a 256 nul.
+
 
 
 
