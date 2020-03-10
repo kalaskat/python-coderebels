@@ -38,6 +38,8 @@ Dobrý programátor se neobejde bez psaní vlastních funkcí. Nyní si ukážem
 
 ### Struktura funkce
 
+Klíčové je slovo `def`, kterým říkáme, že chceme definovat funkci.
+
 ``` python
 def <název funkce> (<vstupní parametry>):
   <co má funkce dělat>
@@ -47,9 +49,16 @@ def <název funkce> (<vstupní parametry>):
 ! Pozor na odsazení !
 
 1) Funkce bez vstupního parametru a bez výstupu
-Nejjednodušší funkci je funkce, která nemá žádné vstupní ani výstupní parametry. Pokud tuto funkci voláme, vystačí nám prázdné závorky. Protože nám fuknce nedává nic zpátky, nemůžeme její výsledek nikam uložit. Takové fuknce se obvykle využívají pro vypsaní nějakého textu. 
+
+Nejjednodušší funkcí je funkce, která nemá žádné vstupní ani výstupní parametry. Pokud tuto funkci voláme, vystačí nám prázdné závorky. Protože nám funkce nedává nic zpátky, nemůžeme její výsledek nikam uložit. Takové fuknce se obvykle využívají pro vypsaní nějakého textu. 
+
 2) Se vstupním parametrem a bez výstupu (výpis proměnné)
+
+Dalším typem je funkce, která sice dostane vstupní parametr(y), ale nevrací nám žádný výsledek. I taková fuknce se může použít pro výpis. Např. funkce, která jako parametr dostane řetězec, kde je uložené jméno uživatele, a vypíše: "Dobrý den, <jméno uživatele>".
+
 3) Se vstupním parametrem a s výstupem (zjisti věk, pokud víš rok narození)
+
+Nejtěžším typem je funkce, která obsahuje všechny tři náležitosti. Vyzkoušíme si na příkladu, kdy nám funkce vrátí věk, pokud ví rok narození. Zde lze i vidět, že taková funkce se nám velmi hodí, protože pokud bychom ji použili ve větším programu, museli bychom každý rok něco měnit (co?).
 
 ## Úkoly
 
