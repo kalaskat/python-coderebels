@@ -13,3 +13,5 @@ Opakování (20 min)
 ## Dokumentace 
 
 ## Psaní vlastních funkcí
+
+## Úkoly
