@@ -141,11 +141,13 @@ skládání řetězců.
 
 ### Příkaz print()
 
-V dnešní lekci budeme používat pro výpis programu příkaz print(). Do kulatých závorek vždy vložíme, co chceme vytisknout. 
+V dnešní lekci budeme používat pro výpis programu příkaz print(). Do kulatých závorek vždy vložíme, co chceme vytisknout. Pozor! Nezapomeňte, že řetězce musí začínat a končit úvozovkami.
 
 ### Příklady
 
 Vyzkoušejte si, jaký je rozdíl mezi dělením (/) a celočíselným dělením (//).
+
+Vyzkoušejte si, co vypíše 214/0.
 
 Vypočítejte, kolik mi zbyde bonbónů, pokud jich mám 87 a spravedlivě je rozdělím mezi svých 9 kamarádů.
 
