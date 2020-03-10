@@ -20,6 +20,8 @@ Abychom se v tom všem vyznali, třídíme funkce do takzvaných modulů. Moduly
 
 Dalším užitečným modulem je modul `random`, který obsahuje funkce pro generování náhodných čísel. Jedna z takových funkcí se jmenuje `randint()`. Umí generovat náhodná celá čísla v zadaném rozmezí. Můžeme tak například simulovat házení kostkou.
 
+Pro práci s řetězci se nám bude velmi hodit funkce `len()`, která vrací délku zadaného řetězce.
+
 Pokud chceme funkce z takovýchto sad (modulů) využívat, musíme vždy na začátek kódu moduly naimportovat. Jednoduše zadáme `import <název modulu>`. Pro random tedy `import random`.
 
 ## Dokumentace 
@@ -32,4 +34,22 @@ Stejně dobře samozřejmě můžete využít google, pokud si nemůžete vzpome
 
 ## Psaní vlastních funkcí
 
+
+
 ## Úkoly
+
+Nalezněte v dokumentaci stránku pro moduly math a random.
+
+Převeďte díky zabudované fuknci 60°, 75° a 90° na radiány.
+
+Pomocí funkce randint() simulujte hod šestistěnnou kostkou.
+
+Uložte výsledek funkce randint() do proměnné hod_kostkou.
+
+Vytvořte program, který vypíše "sude cislo", pokud při hodu naší kostkou padne sudé číslo, "liche cislo", pokud padne liché číslo.
+
+Vytvořte program, který načte jméno a vypíše jeho délku.
+
+Vytvořte program, který načte od uživatele heslo a rozhodne, zda je heslo validní (a uživatel ho může použít). Heslo se nesmí skládat pouze z písmen. Bude se vám hodit funkce `isalpha()`.
+
+Vytvořte program, který načte telefonní číslo a rozhodne, zda se opravdu jedná o telefonní číslo (musí obsahovat 9 čísel). Bude se vám hodit funkce `isdecimal()`.
