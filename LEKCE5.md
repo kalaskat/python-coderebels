@@ -16,6 +16,8 @@ Na závěr si naprogramujeme krátkou hru
 
 ## Seznamy
 
+Cheatsheet: https://github.com/pyvec/cheatsheets/blob/master/lists/lists-cs.pdf
+
 Dnes si ukážeme, jak pracovat se seznamy (angl. lists). Doufám, že víš, kde máš na klávesnici hranaté závorky, protože právě těmi se seznamy vytváří:
 
 ```python
