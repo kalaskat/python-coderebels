@@ -4,10 +4,10 @@ Opakování (20 min)
 Turtle + seznamy (70 min, půl napůl, začít seznamy)
 
 Dnes se naučíme:
+Co jsou to seznamy a jaké mají využití
 Co je to python knihovna TURTLE
 Jak jí používat v Pythonu
 Co pomocí Turtle můžeme programovat
-Co jsou to seznamy a jaké mají využití
 Na závěr si naprogramujeme krátkou hru 
 
 ## Co je to knihovna turtle
@@ -352,77 +352,49 @@ Výsledek:
 
 Paráda! Vše potřebné již máme za sebou!
 
-
-
-
-
 ### for
-Do you remember the program that you used to create a square? You had to repeat the same line of code four times, like this:
 
->>> t.fd(100)
->>> t.rt(90)
->>> t.fd(100)
->>> t.rt(90)
->>> t.fd(100)
->>> t.rt(90)
->>> t.fd(100)
->>> t.rt(90)
-A much shorter way to do this is with the help of a for loop. Try running this code:
-
->>> for i in range(4):
-...     t.fd(100)
-...     t.rt(90)
-Here, the i is like a counter that starts from zero and keeps increasing by 1. When you say in range(4), you’re telling the program that the value of this i should be less than 4. It will terminate the program before i reaches 4.
-
-Here’s a breakdown of how the program works:
-
-At i = 0, the turtle moves forward by 100 units and then turns 90 degrees to the right.
-At i = 0 + 1 = 1, the turtle moves forward by 100 units and then turns 90 degrees to the right.
-At i = 1 + 1 = 2, the turtle moves forward by 100 units and then turns 90 degrees to the right.
-At i = 2 + 1 = 3, the turtle moves forward by 100 units and then turns 90 degrees to the right.
-The turtle will then exit the loop. To check the value of i, type i and then press the Enter key. You’ll get the value of i equal to 3:
+Změňte následující sekvenci pomocí for.
+```python
+t.fd(100)
+t.rt(90)
+t.fd(100)
+t.rt(90)
+t.fd(100)
+t.rt(90)
+t.fd(100)
+t.rt(90)
+```
 
 ### while
-The while loop is used to perform a certain task while a condition is still satisfied. If the condition is no longer satisfied, then your code will terminate the process. You can use a while loop to create a series of circles by typing in this code:
+Vytvořte několik zvětšujících se kruhů pomocí while.
+```python
+n=10
+while n <= 40:
+    t.circle(n)
+    n = n+10
+```
 
->>> n=10
->>> while n <= 40:
-...     t.circle(n)
-...     n = n+10
-When you run this code, you’ll see the circles appearing one after the other, and each new circle will be larger than the previous one.
+### if
 
-Conditional Statements
-You use conditional statements to check if a given condition is true. If it is, then the corresponding command is executed. Try typing in this program:
+Napište program který bude fungovat takto:
+Na konzoli se vypíše: "Mám vykreslit nějaký tvar? Napiš ano nebo ne."
 
->>> u = input("Would you like me to draw a shape? Type yes or no: ")
->>> if u == "yes":
-...     t.circle(50)
-input() is used to obtain input from the user. Here, it will store the user’s response under the variable u. Next, it will compare the value of u with the condition provided and check whether the value of u is "yes". If it’s "yes", then your program draws a circle. If the user types in anything else, then the program won’t do anything.
+Pokud uživatel do konzole napíše "ano", potom program vykreslí kružnici.
+Pokud uživatel do konzole napíše "ne", potom se na konzoli vypíše "Ok" a program skončí.
+Pokud uživatel napíše něco jiného, potom se na konzoli vypíše "Nesprávná odpověď" a program skončí.
 
-When you add an else clause to an if statement, you can specify two results based on whether the condition is true or false. Let’s see this in a program:
+Mějte na paměti, že program je tzv. case-sensitive, to znamená, že záleží na velikosti písmen (a nebo A).
 
->>> u = input("Would you like me to draw a shape? Type yes or no: ")
->>> if u == "yes":
-...     t.circle(50)
->>> else:
-...     print("Okay")
-Here, you tell the program to display a particular output even when the user does not say "yes". You use print() to display some pre-defined characters on the screen.
-
-Note that the user doesn’t need to type "no". They can type anything else, in which case, the result will always be "Okay", because you’re not explicitly telling the program that the user needs to type "no". Not to worry, however, as that can be fixed. You can add an elif clause to provide the program with several conditions and their respective outputs, as you can observe here:
-
-> u = input("Would you like me to draw a shape? Type yes or no: ")
->>> if u == "yes":
-...     t.circle(50)
->>> elif u == "no":
-...     print("Okay")
->>> else:
-...     print("Invalid Reply")
-As you can see, this program now has more than one outcome, depending on the input it receives. Here’s how this code works:
-
-If you type in "yes", then the code processes the input and draws a circle, as per your instructions.
-If you type in "no", then the code prints out "Okay" and your program is terminated.
-If you type in anything else, like "Hello" or "Sandwich", then the code prints "Invalid Reply" and your program is terminated.
-Note that this program is case-sensitive, so when you’re trying it out, be sure to put the strings in upper-case or lower-case accordingly.
+```python
+u = input("Mám vykreslit nějaký tvar? Napiš ano nebo ne: ")
+if u == "ano":
+     t.circle(50)
+elif u == "ne":
+     print("Ok")
+else:
+     print("Nesprávná odpověď")
+```
 
 
 ## Turtle závod
