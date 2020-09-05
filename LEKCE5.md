@@ -356,16 +356,7 @@ Paráda! Vše potřebné již máme za sebou!
 
 
 
-
-Using Loops and Conditional Statements
-When you get into higher-level programming, you’ll find yourself using loops and conditional statements very often. That’s why, in this section, you’ll be going through a couple of turtle programs that make use of these types of commands. This will give you a practical approach when it comes to understanding these concepts. Before you begin, however, here are three definitions for you to keep in mind:
-
-Loops are a set of instructions that are continuously repeated until a particular condition is satisfied.
-Conditional statements carry out a certain task based on a condition that’s satisfied.
-Indentations are used to define blocks of code, especially when using loops and conditional statements. In general, you create an indentation by tapping the Tab key on the keyboard.
-Now, let’s go ahead and explore these commands!
-
-for Loops
+### for
 Do you remember the program that you used to create a square? You had to repeat the same line of code four times, like this:
 
 >>> t.fd(100)
@@ -391,11 +382,7 @@ At i = 1 + 1 = 2, the turtle moves forward by 100 units and then turns 90 degree
 At i = 2 + 1 = 3, the turtle moves forward by 100 units and then turns 90 degrees to the right.
 The turtle will then exit the loop. To check the value of i, type i and then press the Enter key. You’ll get the value of i equal to 3:
 
->>> i
-3
-Note that the whitespace that comes before line 2 and line 3 in the program is the indentation. This indicates that all 3 lines form a single block of code. To learn more about for loops in Python, check out Python “for” Loops (Definite Iteration).
-
-while Loops
+### while
 The while loop is used to perform a certain task while a condition is still satisfied. If the condition is no longer satisfied, then your code will terminate the process. You can use a while loop to create a series of circles by typing in this code:
 
 >>> n=10
@@ -437,106 +424,105 @@ If you type in "no", then the code prints out "Okay" and your program is termina
 If you type in anything else, like "Hello" or "Sandwich", then the code prints "Invalid Reply" and your program is terminated.
 Note that this program is case-sensitive, so when you’re trying it out, be sure to put the strings in upper-case or lower-case accordingly.
 
-To learn more about conditional statements, check out Conditional Statements in Python.
 
-Final Project: The Python Turtle Race
-So far, you’ve learned how to customize your turtle environment, program your turtle to move around the screen, and use loops and conditional statements to improve your code. Now it’s time for the most important part of your programming journey. In this section, you’ll be implementing all that you’ve learned into a single program by creating a fun game that you can play with your friends.
+## Turtle závod
 
-Before you begin, here’s what you need to know about the game:
+Cíl hry: Hráč, jehož turtle je dříve v domečku vyhrává.
 
-The Objective: The player whose turtle reaches its home first wins the game.
+Jak hrát: Každý hráč "háže kostkou". Poté se o hozené číslo turtle posune. Hráči se střídají, dokud jeden z nich nezvítězí.
 
-How to Play:
+Pravidla:
+Každý hráč má jednu turtle s konkrétní barvou. Můžete mít i více hráčů, ale dnes si vyzkoušíme verzi pro dva.
+Každá turtle má domeček, do kterého musí dorazit.
+Každý hráč používá hod kostkou k určení náhodné hodnoty pro dané kolo. V naší hře to bude seznam s čísly od 1 do 6.
 
-Each player rolls a dice to get a number.
-The player then moves their turtle by that many steps.
-The players alternate turns until one of them wins.
-The Structure:
 
-Each player had a turtle indicated by a different color. You can have more than two players, but for the sake of this tutorial, you’ll be creating a two-player game.
-Each turtle has a home position that it must reach.
-Each player uses a die to choose a value at random for their turn. In your program, the die is represented by a list of numbers from 1 to 6.
-Now that you’ve understood the logic of the game, you can go ahead and begin creating it! First, you’ll need to set up the environment.
 
-Setting Up the Game Environment
-Start by importing the Python turtle library. After this, import the built-in random library, which you’ll use randomly select an item from a list:
 
->>> import turtle
->>> import random
-Once these libraries are successfully called into your environment, you can proceed with the rest of your program.
+### Krok 1 - Importování knihoven
 
-Setting Up the Turtles and Homes
-You now have to create the two turtles that will represent the players. Each turtle will be a different color, corresponding to the different players. Here, player one is green and player two is blue:
+Musíme si naimportovat knihovny `turtle` a `random`
+```python
+import turtle
+import random
+```
 
->>> player_one = turtle.Turtle()
->>> player_one.color("green")
->>> player_one.shape("turtle")
->>> player_one.penup()
->>> player_one.goto(-200,100)
->>> player_two = player_one.clone()
->>> player_two.color("blue")
->>> player_two.penup()
->>> player_two.goto(-200,-100)
-One you’ve created the turtles, you place them at their starting positions and make sure that these positions are aligned. Note that you created player two’s turtle by cloning player one’s turtle, changing its color, and placing it at a different starting point.
+### Krok 2 - Nastavení turtle a domečků
 
-You now need to set up homes for the turtles. These homes will act as the finishing points for each turtle. Each of the turtles’ homes will be represented by a circle. Here, you need to make sure that both homes are equidistant from the starting point:
+Nyní si vytvoříme dvě turtle pro dva hráče. Každá bude mít jinou barvu. 
 
->>> player_one.goto(300,60)
->>> player_one.pendown()
->>> player_one.circle(40)
->>> player_one.penup()
->>> player_one.goto(-200,100)
->>> player_two.goto(300,-140)
->>> player_two.pendown()
->>> player_two.circle(40)
->>> player_two.penup()
->>> player_two.goto(-200,-100)
-After drawing the respective homes, you send the turtles back to their starting positions:
+```python
+player_one = turtle.Turtle()
+player_one.color("green")
+player_one.shape("turtle")
+player_one.penup()
+player_one.goto(-200,100)
+player_two = player_one.clone()
+player_two.color("blue")
+player_two.penup()
+player_two.goto(-200,-100)
+```
+
+Nyní vytvoříme cílové domečky - kružnice.
+
+```python
+player_one.goto(300,60)
+player_one.pendown()
+player_one.circle(40)
+player_one.penup()
+player_one.goto(-200,100)
+player_two.goto(300,-140)
+player_two.pendown()
+player_two.circle(40)
+player_two.penup()
+player_two.goto(-200,-100)
+```
 
 ![turtle22](https://files.realpython.com/media/UPDATE_Turtle_Race_Setup_Blue_and_Green.16e6da3cc20d.png)
 
-Awesome! The visual aspects of your game are complete. You can now create the die that you’ll be using to play the game.
+Dobrá práce! Nyní si vytvoříme kostku.
 
-Creating the Die
-You can create a virtual die for your game with a list, which is an ordered sequence of items. In real life, you might prepare grocery lists and to-do lists to help you stay organized. In Python, lists work in a similar way.
+### Kostka
 
-In this case, you’ll be using a list to create your die. First, you define your list of numbers in ascending order from 1 to 6. You can define a list by giving it a name and then enclosing its items within square brackets, like this:
+Kostka bude fungovat jako seznam s čísly od 1 do 6, z kterého budeme náhodně vybírat jedno konkrétní číslo.
+`die = [1,2,3,4,5,6]`
 
-die = [1,2,3,4,5,6]
-This list has now become your die. To roll the dice, all you have to do is program your system to randomly select a number from it. The number that is selected will be considered as the output of the die.
+### Zbytek hry
+Budeme využívat smyčky a podmínky, takže musíme dávat pozor na odsazení kódu! Kroky jsou následující:
 
-Developing the Game
-It’s time to develop the code for the rest of the game. You’ll be using loops and conditional statements here, so you need to be careful with the indentations and spaces. To start, take a look at the steps your program will need to take to run the game:
+Krok 1: Začneme tím, že náš program zkontroluje, zda nějaká z turtle není v domečku.
+Krok 2: Pokud není, hráči mohou pokračovat ve hře.
+Krok 3: V každé smyčce musíme házet kostkou - program vybere ze seznamu náhodně číslo.
+Krok 4: Poté se musí turtle o daný počet kroků pohnout dopředu.
 
-Step 1: You’ll start by telling your program to check if either turtle has reached its home.
-Step 2: If they haven’t, then you’ll tell your program to allow the players to continue trying.
-Step 3: In each loop, you tell your program to roll the die by randomly picking a number from the list.
-Step 4: You then tell it to move the respective turtle accordingly, with the number of steps based on the outcome of this random selection.
-The program keeps repeating this process, and stops once one of the turtles reaches the goal. Here’s how the code looks:
+Program toto opakuje a zastaví se, pokud jeden z hráčů vyhraje.
 
->>> for i in range(20):
-...     if player_one.pos() >= (300,100):
-...             print("Player One Wins!")
-...             break
-...     elif player_two.pos() >= (300,-100):
-...             print("Player Two Wins!")
-...             break
-...     else:
-...             player_one_turn = input("Press 'Enter' to roll the die ")
-...             die_outcome = random.choice(die)
-...             print("The result of the die roll is: ")
-...             print(die_outcome)
-...             print("The number of steps will be: ")
-...             print(20*die_outcome)
-...             player_one.fd(20*die_outcome)
-...             player_two_turn = input("Press 'Enter' to roll the die ")
-...             d = random.choice(die)
-...             print("The result of the die roll is: ")
-...             print(die_outcome)
-...             print("The number of steps will be: ")
-...             print(20*die_outcome)
-...             player_two.fd(20*die_outcome)
-Your final output will look a little something like this:
+```python
+for i in range(20):
+    if player_one.pos() >= (300,100):
+            print("Player One Wins!")
+            break
+    elif player_two.pos() >= (300,-100):
+            print("Player Two Wins!")
+            break
+    else:
+            player_one_turn = input("Press 'Enter' to roll the die ")
+            die_outcome = random.choice(die)
+            print("The result of the die roll is: ")
+            print(die_outcome)
+            print("The number of steps will be: ")
+            print(20*die_outcome)
+            player_one.fd(20*die_outcome)
+            player_two_turn = input("Press 'Enter' to roll the die ")
+            d = random.choice(die)
+            print("The result of the die roll is: ")
+            print(die_outcome)
+            print("The number of steps will be: ")
+            print(20*die_outcome)
+            player_two.fd(20*die_outcome)
+```
+
+Nakonec by naše hra měla vypadat nějak takto:
 
 ![turtle_final](https://files.realpython.com/media/Update_-_Turtle_Race_Green_and_Blue.b1ee6be37a9f.gif)
 
