@@ -8,7 +8,7 @@ Co jsou to seznamy a jaké mají využití
 
 Co je to python knihovna TURTLE
 
-Jak jí používat v Pythonu
+Jak ji používat v Pythonu
 
 Co pomocí Turtle můžeme programovat
 
