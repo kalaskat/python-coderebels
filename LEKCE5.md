@@ -18,3 +18,8 @@ S touto knihovnou můžete vykreslovat a vytvářet různé variace tvarů a obr
 
 ![ukazka][turtle1.gif]
 
+![turtle2][turtle2.png]
+
+![turtle3](https://files.realpython.com/media/Update_-_Moving_Turtle_VIDEO_GIF.61623cf40fed.gif)
+
+
